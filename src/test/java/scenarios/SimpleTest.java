@@ -24,7 +24,6 @@ public class SimpleTest extends DriverSetup {
     @Test
     public void webTest() throws InterruptedException {
         driver.get("http://iana.org");
-        Thread.sleep(5000);
         System.out.println("Site opening done");
     }
 
