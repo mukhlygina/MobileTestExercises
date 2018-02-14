@@ -16,8 +16,7 @@ public class SimpleTest extends DriverSetup {
 
     @Test
     public void simpleTest(){
-        String app_package_name = "com.example.android.contactmanager:id/";
-        driver.findElement(By.id(app_package_name + "addContactButton")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@content-desc='Add Contact']")).click();
         System.out.println("Simplest Appium test done");
     }
 

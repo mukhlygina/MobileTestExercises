@@ -12,7 +12,7 @@ public class DriverSetup {
 
     protected void prepareNative() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName","emulator-5554");
+        capabilities.setCapability("deviceName","BUC4C16927003828");
         capabilities.setCapability("platformName","Android");
 
         String file = getClass().getClassLoader().getResource("ContactManager.apk").getFile();
@@ -25,7 +25,7 @@ public class DriverSetup {
 
     protected void prepareAndroidWeb() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName","emulator-5554");
+        capabilities.setCapability("deviceName","BUC4C16927003828");
         capabilities.setCapability("platformName","Android");
         capabilities.setCapability("browserName", "Chrome");
 
