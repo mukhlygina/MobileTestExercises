@@ -1,9 +1,11 @@
-package scenarios;
+package scenarios.ex2;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import setup.Driver;
 
 import java.net.MalformedURLException;
 

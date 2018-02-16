@@ -1,4 +1,4 @@
-package scenarios;
+package scenarios.ex2;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
