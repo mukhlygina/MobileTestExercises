@@ -2,7 +2,6 @@ package scenarios.ex3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import setup.PropertyFile;
 
@@ -24,5 +23,4 @@ public class SimpleWebTests extends Hooks {
         assertTrue(driver().findElement(By.cssSelector("#intro")).isDisplayed());
         System.out.println("Site opening done");
     }
-
 }

@@ -16,16 +16,17 @@ public class Hooks extends Driver {
         super(file);
     }
 
-    @BeforeSuite(description = "Prepare driver to run test(s)")
+    @BeforeSuite(description = "Prepare driver to run test(s)", alwaysRun = true)
     public void setUp() throws Exception {
         prepareDriver();
         System.out.println("Native and WEB Driver prepared");
 
     }
 
-    @AfterSuite(description = "Close driver on all tests completion")
+    @AfterSuite(description = "Close driver on all tests completion", alwaysRun = true)
     public void tearDown() throws Exception {
-        driver().quit();
+ //       driver().quit();
+        driver().closeApp();
         System.out.println("Driver closed");
     }
 

@@ -48,8 +48,6 @@ public class Driver extends TestProperties {
         switch(TEST_PLATFORM){
             case "Android":
                 browserName = "Chrome";
-                capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, APP_ACTIVITY);
-                capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE);
                 break;
             case "iOS":
                 browserName = "Safari";
@@ -64,6 +62,8 @@ public class Driver extends TestProperties {
             // Native
             File app = new File(AUT);
             capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+            capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, APP_ACTIVITY);
+            capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE);
         } else if(SUT != null && AUT == null){
             // Web
             capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, browserName);
