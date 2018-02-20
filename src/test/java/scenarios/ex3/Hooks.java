@@ -10,6 +10,7 @@ import java.io.IOException;
 public class Hooks extends Driver {
     /**
      * Required variables will be initialized by inherited constructor
+     *
      * @throws IOException
      */
     Hooks(PropertyFile file) throws IOException {
@@ -25,9 +26,7 @@ public class Hooks extends Driver {
 
     @AfterSuite(description = "Close driver on all tests completion", alwaysRun = true)
     public void tearDown() throws Exception {
- //       driver().quit();
         driver().closeApp();
         System.out.println("Driver closed");
     }
-
 }
