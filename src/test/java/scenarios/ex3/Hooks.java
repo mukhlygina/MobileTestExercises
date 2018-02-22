@@ -8,12 +8,7 @@ import setup.PropertyFile;
 import java.io.IOException;
 
 public class Hooks extends Driver {
-    /**
-     * Required variables will be initialized by inherited constructor
-     *
-     * @throws IOException
-     */
-    Hooks(PropertyFile file) throws IOException {
+    public Hooks(PropertyFile file) throws IOException {
         super(file);
     }
 
@@ -21,7 +16,6 @@ public class Hooks extends Driver {
     public void setUp() throws Exception {
         prepareDriver();
         System.out.println("Native and WEB Driver prepared");
-
     }
 
     @AfterSuite(description = "Close driver on all tests completion", alwaysRun = true)

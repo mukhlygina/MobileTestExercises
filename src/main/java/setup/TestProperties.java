@@ -16,7 +16,9 @@ public class TestProperties {
     }
 
     protected String getProp(String propKey, PropertyFile file) throws IOException {
-        if (!currentProps.containsKey(propKey)) currentProps = getCurrentProps(file);
+        if (!currentProps.containsKey(propKey)) {
+            currentProps = getCurrentProps(file);
+        }
         // "default" form used to handle the absence of parameter
         return currentProps.getProperty(propKey, null);
     }

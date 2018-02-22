@@ -13,7 +13,7 @@ public class SimpleNativeTests extends Hooks {
     private ContactManagerIndexPage indexPage;
     private NewContactPage contactPage;
 
-    protected SimpleNativeTests() throws IOException {
+    public SimpleNativeTests() throws IOException {
         super(PropertyFile.NATIVETEST);
     }
 

@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 
 @Test(groups = "web")
 public class SimpleWebTests extends Hooks {
-    protected SimpleWebTests() throws IOException {
+    public SimpleWebTests() throws IOException {
         super(PropertyFile.WEBTEST);
     }
 
